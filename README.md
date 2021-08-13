@@ -1,4 +1,4 @@
-# Desafio Hevx utilizando a API do GitHub
+# Desafio Hvex utilizando a API do GitHub
 
 Instruções para iniciar.
 
