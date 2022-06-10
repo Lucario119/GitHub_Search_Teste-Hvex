@@ -7,7 +7,7 @@ import { Container, SearchUserForm, SearchField } from './styles';
 import { useFetchUserData } from '../../hooks/useFetchUserData';
 import { Link } from 'react-router-dom';
 
-const SearchUserPage: React.FC = () => {
+function SearchUserPage() {
   const { userName, githubUser, setUserName, handleSubmit } =
     useFetchUserData();
   return (
@@ -16,11 +16,9 @@ const SearchUserPage: React.FC = () => {
         <Link to="">GitHub Search</Link>
         <SearchUserForm onSubmit={handleSubmit}>
           <h1>Pesquise um perfil do GitHub</h1>
-
           <SearchField>
             <button type="submit"></button>
             <SearchIcon />
-
             <input
               type="text"
               placeholder="Nome de usuário do GitHub"
@@ -30,7 +28,6 @@ const SearchUserPage: React.FC = () => {
           </SearchField>
         </SearchUserForm>
       </header>
-
       {githubUser && (
         <UserCard
           key={githubUser.id}
@@ -45,6 +42,6 @@ const SearchUserPage: React.FC = () => {
       )}
     </Container>
   );
-};
+}
 
 export default SearchUserPage;
