@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom';
 
 import { Container, ProjectPresenting } from './styles';
 
-const LandingPage: React.FC = () => {
+function LandingPage() {
   return (
     <Container>
       <ProjectPresenting>
@@ -18,6 +18,6 @@ const LandingPage: React.FC = () => {
       </ProjectPresenting>
     </Container>
   );
-};
+}
 
 export default LandingPage;
