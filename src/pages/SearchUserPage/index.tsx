@@ -25,6 +25,7 @@ function SearchUserPage() {
               value={userName}
               onChange={(e) => setUserName(e.target.value)}
             />
+            
           </SearchField>
         </SearchUserForm>
       </header>
